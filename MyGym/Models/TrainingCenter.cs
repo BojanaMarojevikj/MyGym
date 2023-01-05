@@ -8,9 +8,13 @@ namespace MyGym.Models
         [Key]
         public int Id { get; set; }
 
+        [Display(Name ="Training Center Logo")]
         public string Logo { get; set; }
+
+        [Display(Name = "Training Center Name")]
         public string Name { get; set; }
 
+        [Display(Name = "Training Center Description")]
         public string Description { get; set; }
 
         //Relationships

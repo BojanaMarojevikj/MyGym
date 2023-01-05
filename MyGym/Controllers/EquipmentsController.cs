@@ -14,7 +14,7 @@ namespace MyGym.Controllers
         public IActionResult Index()
         {
             var data = _context.Equipments.ToList();
-            return View();
+            return View(data);
         }
     }
 }

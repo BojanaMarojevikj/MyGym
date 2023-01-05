@@ -16,7 +16,7 @@ namespace MyGym.Controllers
         public async Task<IActionResult> Index()
         {
             var allTrainings = await _context.Trainings.ToListAsync();
-            return View();
+            return View(allTrainings);
         }
     }
 }
