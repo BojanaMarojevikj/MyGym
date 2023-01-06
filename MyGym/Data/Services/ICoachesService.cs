@@ -1,0 +1,9 @@
+﻿using MyGym.Data.Base;
+using MyGym.Models;
+
+namespace MyGym.Data.Services
+{
+    public interface ICoachesService : IEntityBaseRepository<Coach>
+    {
+    }
+}
