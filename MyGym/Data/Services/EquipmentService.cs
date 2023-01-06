@@ -15,30 +15,37 @@ namespace MyGym.Data.Services
             _context = context;
         }
 
-        public void Add(Equipment equipment)
+        public async Task AddAsync(Equipment equipment)
         {
-            throw new System.NotImplementedException();
+
+            await _context.Equipments.AddAsync(equipment);
+            await _context.SaveChangesAsync();
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            throw new System.NotImplementedException();
+            var result = await _context.Equipments.FirstOrDefaultAsync(n => n.Id == id);
+            _context.Equipments.Remove(result);
+            await _context.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Equipment>> GetAll()
+        public async Task<IEnumerable<Equipment>> GetAllAsync()
         {
             var result = await _context.Equipments.ToListAsync();
             return result;
         }
 
-        public Equipment GetById(int id)
+        public async Task<Equipment> GetByIdAsync(int id)
         {
-            throw new System.NotImplementedException();
+            var result = await _context.Equipments.FirstOrDefaultAsync(n => n.Id == id);
+            return result;
         }
 
-        public Equipment Update(int id, Equipment newEquipment)
+        public async Task<Equipment> UpdateAsync(int id, Equipment newEquipment)
         {
-            throw new System.NotImplementedException();
+            _context.Update(newEquipment);
+            await _context.SaveChangesAsync();
+            return newEquipment;
         }
     }
 }

@@ -6,14 +6,14 @@ namespace MyGym.Data.Services
 {
     public interface IEquipmentService
     {
-        Task<IEnumerable<Equipment>> GetAll();
+        Task<IEnumerable<Equipment>> GetAllAsync();
 
-        Equipment GetById(int id);
+        Task<Equipment> GetByIdAsync(int id);
 
-        void Add(Equipment equipment);
+        Task AddAsync(Equipment equipment);
 
-        Equipment Update(int id, Equipment newEquipment);
+        Task<Equipment> UpdateAsync(int id, Equipment newEquipment);
 
-        void Delete(int id);
+        Task DeleteAsync(int id);
     }
 }

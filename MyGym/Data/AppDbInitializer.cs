@@ -62,32 +62,32 @@ namespace MyGym.Data
                         new Equipment()
                         {
                             Name = "Actor 1",
-                            Bio = "This is the Bio of the first actor",
+                            Description = "This is the Bio of the first actor",
                             PictureURL = "http://dotnethow.net/images/actors/actor-1.jpeg"
 
                         },
                         new Equipment()
                         {
                             Name = "Actor 2",
-                            Bio = "This is the Bio of the second actor",
+                            Description = "This is the Bio of the second actor",
                             PictureURL = "http://dotnethow.net/images/actors/actor-2.jpeg"
                         },
                         new Equipment()
                         {
                             Name = "Actor 3",
-                            Bio = "This is the Bio of the second actor",
+                            Description = "This is the Bio of the second actor",
                             PictureURL = "http://dotnethow.net/images/actors/actor-3.jpeg"
                         },
                         new Equipment()
                         {
                             Name = "Actor 4",
-                            Bio = "This is the Bio of the second actor",
+                            Description = "This is the Bio of the second actor",
                             PictureURL = "http://dotnethow.net/images/actors/actor-4.jpeg"
                         },
                         new Equipment()
                         {
                             Name = "Actor 5",
-                            Bio = "This is the Bio of the second actor",
+                            Description = "This is the Bio of the second actor",
                             PictureURL = "http://dotnethow.net/images/actors/actor-5.jpeg"
                         }
                     });
