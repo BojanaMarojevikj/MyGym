@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyGym.Data;
+using MyGym.Data.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,9 @@ namespace MyGym
         {
             //DbContext Configuration
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString")));
+
+            //Services configuration
+            services.AddScoped<IEquipmentService, EquipmentService>();
 
             services.AddControllersWithViews();
         }
