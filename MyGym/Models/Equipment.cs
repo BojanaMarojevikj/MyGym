@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using MyGym.Data.Base;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace MyGym.Models
 {
-    public class Equipment
+    public class Equipment:IEntityBase
     {
         [Key]
         public int Id { get; set; }
