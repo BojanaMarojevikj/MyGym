@@ -1,4 +1,5 @@
 ﻿using MyGym.Data;
+using MyGym.Data.Base;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -6,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyGym.Models
 {
-    public class Training
+    public class Training : IEntityBase
     {
         [Key]
         public int Id { get; set; }

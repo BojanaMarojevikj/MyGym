@@ -32,6 +32,8 @@ namespace MyGym
             //Services configuration
             services.AddScoped<IEquipmentService, EquipmentService>();
             services.AddScoped<ICoachesService, CoachesService>();
+            services.AddScoped<ITrainingCentersService, TrainingCentersService>();
+            services.AddScoped<ITrainingsService, TrainingsService>();
 
             services.AddControllersWithViews();
         }
