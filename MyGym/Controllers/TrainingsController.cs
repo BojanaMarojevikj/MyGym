@@ -75,7 +75,7 @@ namespace MyGym.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        //GET: Trainings/Create
+        //GET: Trainings/Edit/1
         public async Task<IActionResult> Edit(int id)
         {
             var trainingDetails = await _service.GetTrainingByIdAsync(id);

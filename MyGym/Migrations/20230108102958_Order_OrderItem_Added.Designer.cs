@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyGym.Data;
 
 namespace MyGym.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230108102958_Order_OrderItem_Added")]
+    partial class Order_OrderItem_Added
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -130,29 +132,6 @@ namespace MyGym.Migrations
                     b.ToTable("OrderItems");
                 });
 
-            modelBuilder.Entity("MyGym.Models.ShoppingCartItem", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<int>("Amount")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ShoppingCartId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("TrainingId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("TrainingId");
-
-                    b.ToTable("ShoppingCartItems");
-                });
-
             modelBuilder.Entity("MyGym.Models.Training", b =>
                 {
                     b.Property<int>("Id")
@@ -254,15 +233,6 @@ namespace MyGym.Migrations
                         .IsRequired();
 
                     b.Navigation("Order");
-
-                    b.Navigation("Training");
-                });
-
-            modelBuilder.Entity("MyGym.Models.ShoppingCartItem", b =>
-                {
-                    b.HasOne("MyGym.Models.Training", "Training")
-                        .WithMany()
-                        .HasForeignKey("TrainingId");
 
                     b.Navigation("Training");
                 });

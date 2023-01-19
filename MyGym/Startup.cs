@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyGym.Data;
+using MyGym.Data.Cart;
 using MyGym.Data.Services;
 using System;
 using System.Collections.Generic;
@@ -34,7 +36,12 @@ namespace MyGym
             services.AddScoped<ICoachesService, CoachesService>();
             services.AddScoped<ITrainingCentersService, TrainingCentersService>();
             services.AddScoped<ITrainingsService, TrainingsService>();
+            services.AddScoped<IOrdersService, OrdersService>();
 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped(sc => ShoppingCart.GetShoppingCart(sc));
+
+            services.AddSession();
             services.AddControllersWithViews();
         }
 
@@ -55,6 +62,7 @@ namespace MyGym
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseSession();
 
             app.UseAuthorization();
 
