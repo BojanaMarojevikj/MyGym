@@ -1,13 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyGym.Data;
 using MyGym.Data.Services;
+using MyGym.Data.Static;
 using MyGym.Models;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace MyGym.Controllers
 {
+    [Authorize(Roles = UserRoles.Admin)]
     public class CoachesController : Controller
     {
         private readonly ICoachesService _service;
@@ -16,13 +19,17 @@ namespace MyGym.Controllers
         {
             _service = service;
         }
+        [AllowAnonymous]
+
         public async Task<IActionResult> Index()
         {
             var allCoaches = await _service.GetAllAsync();
             return View(allCoaches);
         }
 
+
         //GET: Coaches/Details/1
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
         {
             var coachDetails = await _service.GetByIdAsync(id);

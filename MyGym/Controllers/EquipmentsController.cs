@@ -1,19 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MyGym.Data;
 using MyGym.Data.Services;
+using MyGym.Data.Static;
 using MyGym.Models;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace MyGym.Controllers
 {
+    [Authorize(Roles = UserRoles.Admin)]
     public class EquipmentsController : Controller
     {
+        
         private readonly IEquipmentService _service;
 
         public EquipmentsController(IEquipmentService service) { 
             _service = service;
         }
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var data = await _service.GetAllAsync();
@@ -36,7 +41,7 @@ namespace MyGym.Controllers
         }
 
         //Get: Equipments/Details/1
-
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int id)
         {
             var equipmentDetails = await _service.GetByIdAsync(id);
