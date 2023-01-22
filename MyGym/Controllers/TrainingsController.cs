@@ -34,8 +34,8 @@ namespace MyGym.Controllers
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                var filteredResult = allTrainings.Where(n => n.Name.Contains(searchString)
-                || n.Description.Contains(searchString)).ToList();
+                var filteredResult = allTrainings.Where(n => n.Name.ToLower().Contains(searchString.ToLower())
+                || n.Description.ToLower().Contains(searchString.ToLower())).ToList();
                 return View("Index", filteredResult);
             }
 
