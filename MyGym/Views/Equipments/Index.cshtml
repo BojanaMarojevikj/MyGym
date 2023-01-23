@@ -30,7 +30,7 @@
                     <td class="align-middle">
                         @Html.DisplayFor(modelItem => item.Name)
                     </td>
-                    <td class="align-middle">
+                    <td class="align-middle" style="width: 315px;">
                         @Html.DisplayFor(modelItem => item.Description)
                     </td>
                     @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))

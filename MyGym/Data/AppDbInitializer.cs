@@ -25,33 +25,33 @@ namespace MyGym.Data
                     {
                         new TrainingCenter()
                         {
-                            Name = "Cinema 1",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-1.jpeg",
-                            Description = "This is the description of the first cinema"
+                            Name = "Rituals Studio",
+                            Logo = "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/305568212_614722836751296_941147583496687606_n.png?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGfyYJF8jKBG8Cn6l0-p-auBOijdtk4SLYE6KN22ThItqCAcm-5H_wIdbmBfjqyXWpgwvFAw11WMkGsOv5x7NcK&_nc_ohc=cisoq1v51toAX_CaPL8&_nc_ht=scontent-dfw5-2.xx&oh=00_AfBCK00CP30kcGnntf317FzSOGwHKW83PrjtTFyJMbnzZQ&oe=63D35F5E",
+                            Description = "Rituals Studio is a fitness studio located in Karpos. It is open every day except Sunday. It offers a wide variety of trainings including functional training, HIIT, upper body and lower body."
                         },
                         new TrainingCenter()
                         {
-                            Name = "Cinema 2",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-2.jpeg",
-                            Description = "This is the description of the first cinema"
+                            Name = "The Yoga Place",
+                            Logo = "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/299121364_591743208984068_282569798793587096_n.png?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFucnwBReeWP1rQuCJL59cePLZqzLsHSI88tmrMuwdIjyld1IDddnFlQUVyr3gvMImmHG6QMP21RUnrwEUru0nP&_nc_ohc=RAPsRwXGpXIAX8MBGLG&_nc_ht=scontent-dfw5-2.xx&oh=00_AfAcPG62VP3X6dBQsGrfFAK8ql_lBEJYJtZlI3xuuq-WqA&oe=63D1B318",
+                            Description = "The Yoga Place is a yoga studio located in Debar Maalo, Skopje. It is open Monday through Thursday and it offers many different types of yoga."
                         },
                         new TrainingCenter()
                         {
-                            Name = "Cinema 3",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-3.jpeg",
-                            Description = "This is the description of the first cinema"
+                            Name = "SC Boris Trajkovski",
+                            Logo = "https://sportmaster.mk/images/complex/2781586352425a0f81495b53619c53ecc682a759a25b8.jpg",
+                            Description = "The BORIS TRAJKOVSKI Sports Center is an elite complex and is the only multi-functional center on the territory of the Republic of Macedonia."
                         },
                         new TrainingCenter()
                         {
-                            Name = "Cinema 4",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-4.jpeg",
-                            Description = "This is the description of the first cinema"
+                            Name = "Trinity",
+                            Logo = "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.18169-9/1797447_399853563491292_916855896_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=d57657&_nc_eui2=AeHQtZD0PoGdjgarAvvbsfuqJMMJNliMBwokwwk2WIwHCmkiabRE1suMslAhrgx49kZn7S6chmUEGBW1S_zzP67T&_nc_ohc=ESiFCDfAvcEAX9za4eG&_nc_ht=scontent-dfw5-2.xx&oh=00_AfCxVwhBSldcuOsuVTusgoX1hincadRWrNQLH_GYd8ws9g&oe=63F4E9BC",
+                            Description = "Trinity is a fitness center located in the center of Skopje, North Macedonia. It offers programs like pilates and yoga."
                         },
                         new TrainingCenter()
                         {
-                            Name = "Cinema 5",
-                            Logo = "http://dotnethow.net/images/cinemas/cinema-5.jpeg",
-                            Description = "This is the description of the first cinema"
+                            Name = "Ultimatefit Alebras",
+                            Logo = "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/310043689_513485604119393_4862758865012566748_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFh640YTO5eecCxBfimf7FGkCFGonWMBTCQIUaidYwFMGSAWE6QwBK9VlJvBFfMbCYyUiuBJxEDyt_Vrct1iKjg&_nc_ohc=a5GdkFPPKH4AX8xf3IW&_nc_ht=scontent-dfw5-2.xx&oh=00_AfC0vGDqTJolA5HiETZ67In95ZOeLexXg1kJbvrPgXTndw&oe=63D219E0",
+                            Description = "Ultimatefit Alebras is a fitness center that offers one of the best crossfit programs in Skopje, Macedonia. It is located next to the Josip Broz Tito high school in the center of Skopje."
                         },
                     });
                     context.SaveChanges();
@@ -64,34 +64,34 @@ namespace MyGym.Data
                     {
                         new Equipment()
                         {
-                            Name = "Actor 1",
-                            Description = "This is the Bio of the first actor",
-                            PictureURL = "http://dotnethow.net/images/actors/actor-1.jpeg"
+                            Name = "Equipment 1",
+                            Description = "This is the Bio of the first Equipment",
+                            PictureURL = "https://m.media-amazon.com/images/I/41AMoDiOhyL._AC_SY1000_.jpg"
 
                         },
                         new Equipment()
                         {
-                            Name = "Actor 2",
-                            Description = "This is the Bio of the second actor",
-                            PictureURL = "http://dotnethow.net/images/actors/actor-2.jpeg"
+                            Name = "Equipment 2",
+                            Description = "This is the Bio of the second Equipment",
+                            PictureURL = "https://m.media-amazon.com/images/I/41AMoDiOhyL._AC_SY1000_.jpg"
                         },
                         new Equipment()
                         {
-                            Name = "Actor 3",
-                            Description = "This is the Bio of the second actor",
-                            PictureURL = "http://dotnethow.net/images/actors/actor-3.jpeg"
+                            Name = "Equipment 3",
+                            Description = "This is the Bio of the second Equipment",
+                            PictureURL = "https://m.media-amazon.com/images/I/41AMoDiOhyL._AC_SY1000_.jpg"
                         },
                         new Equipment()
                         {
-                            Name = "Actor 4",
-                            Description = "This is the Bio of the second actor",
-                            PictureURL = "http://dotnethow.net/images/actors/actor-4.jpeg"
+                            Name = "Equipment 4",
+                            Description = "This is the Bio of the second Equipment",
+                            PictureURL = "https://m.media-amazon.com/images/I/41AMoDiOhyL._AC_SY1000_.jpg"
                         },
                         new Equipment()
                         {
-                            Name = "Actor 5",
-                            Description = "This is the Bio of the second actor",
-                            PictureURL = "http://dotnethow.net/images/actors/actor-5.jpeg"
+                            Name = "Equipment 5",
+                            Description = "This is the Bio of the second Equipment",
+                            PictureURL = "https://m.media-amazon.com/images/I/41AMoDiOhyL._AC_SY1000_.jpg"
                         }
                     });
                     context.SaveChanges();
@@ -105,34 +105,34 @@ namespace MyGym.Data
                     {
                         new Coach()
                         {
-                            Name = "Producer 1",
-                            Bio = "This is the Bio of the first actor",
-                            PictureURL = "http://dotnethow.net/images/producers/producer-1.jpeg"
+                            Name = "Coach 1",
+                            Bio = "This is the Bio of the first Coach",
+                            PictureURL = "https://hips.hearstapps.com/hmg-prod/images/mh-trainer-2-1533576998.png"
 
                         },
                         new Coach()
                         {
-                            Name = "Producer 2",
-                            Bio = "This is the Bio of the second actor",
-                            PictureURL = "http://dotnethow.net/images/producers/producer-2.jpeg"
+                            Name = "Coach 2",
+                            Bio = "This is the Bio of the second Coach",
+                            PictureURL = "https://hips.hearstapps.com/hmg-prod/images/mh-trainer-2-1533576998.png"
                         },
                         new Coach()
                         {
-                            Name = "Producer 3",
-                            Bio = "This is the Bio of the second actor",
-                            PictureURL = "http://dotnethow.net/images/producers/producer-3.jpeg"
+                            Name = "Coach 3",
+                            Bio = "This is the Bio of the second Coach",
+                            PictureURL = "https://hips.hearstapps.com/hmg-prod/images/mh-trainer-2-1533576998.png"
                         },
                         new Coach()
                         {
-                            Name = "Producer 4",
-                            Bio = "This is the Bio of the second actor",
-                            PictureURL = "http://dotnethow.net/images/producers/producer-4.jpeg"
+                            Name = "Coach 4",
+                            Bio = "This is the Bio of the second Coach",
+                            PictureURL = "https://hips.hearstapps.com/hmg-prod/images/mh-trainer-2-1533576998.png"
                         },
                         new Coach()
                         {
-                            Name = "Producer 5",
-                            Bio = "This is the Bio of the second actor",
-                            PictureURL = "http://dotnethow.net/images/producers/producer-5.jpeg"
+                            Name = "Coach 5",
+                            Bio = "This is the Bio of the second Coach",
+                            PictureURL = "https://hips.hearstapps.com/hmg-prod/images/mh-trainer-2-1533576998.png"
                         }
                     });
                     context.SaveChanges();
@@ -145,75 +145,75 @@ namespace MyGym.Data
                     {
                         new Training()
                         {
-                            Name = "Life",
-                            Description = "This is the Life movie description",
+                            Name = "Functional training",
+                            Description = "This is the Functional training description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-3.jpeg",
+                            ImageURL = "https://www.erjcchouston.org/clientuploads/Photos/Fitness_Center/Fitness_Group_Lunging_med_600x400.jpg",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(10),
                             TrainingCenterId = 3,
                             CoachId = 3,
-                            TrainingCategory = TrainingCategory.HIIT
+                            TrainingCategory = TrainingCategory.Beginner
                         },
                         new Training()
                         {
-                            Name = "The Shawshank Redemption",
-                            Description = "This is the Shawshank Redemption description",
+                            Name = "Yoga",
+                            Description = "This is the yoga description",
                             Price = 29.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-1.jpeg",
+                            ImageURL = "https://www.erjcchouston.org/clientuploads/Photos/Fitness_Center/Fitness_Group_Lunging_med_600x400.jpg",
                             StartDate = DateTime.Now,
                             EndDate = DateTime.Now.AddDays(3),
                             TrainingCenterId = 1,
                             CoachId = 1,
-                            TrainingCategory = TrainingCategory.Cardio
+                            TrainingCategory = TrainingCategory.Beginner
                         },
                         new Training()
                         {
-                            Name = "Ghost",
-                            Description = "This is the Ghost movie description",
+                            Name = "Swimming",
+                            Description = "This is the swimming description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-4.jpeg",
+                            ImageURL = "https://www.erjcchouston.org/clientuploads/Photos/Fitness_Center/Fitness_Group_Lunging_med_600x400.jpg",
                             StartDate = DateTime.Now,
                             EndDate = DateTime.Now.AddDays(7),
                             TrainingCenterId = 4,
                             CoachId = 4,
-                            TrainingCategory =  TrainingCategory.Upper_Body
+                            TrainingCategory =  TrainingCategory.Beginner
                         },
                         new Training()
                         {
-                            Name = "Race",
-                            Description = "This is the Race movie description",
+                            Name = "Pilates",
+                            Description = "This is the pilates description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-6.jpeg",
+                            ImageURL = "https://www.erjcchouston.org/clientuploads/Photos/Fitness_Center/Fitness_Group_Lunging_med_600x400.jpg",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(-5),
                             TrainingCenterId = 1,
                             CoachId = 2,
-                            TrainingCategory = TrainingCategory.Lower_Body
+                            TrainingCategory = TrainingCategory.Beginner
                         },
                         new Training()
                         {
-                            Name = "Scoob",
-                            Description = "This is the Scoob movie description",
+                            Name = "Crossfit",
+                            Description = "This is the crossfit description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-7.jpeg",
+                            ImageURL = "https://www.erjcchouston.org/clientuploads/Photos/Fitness_Center/Fitness_Group_Lunging_med_600x400.jpg",
                             StartDate = DateTime.Now.AddDays(-10),
                             EndDate = DateTime.Now.AddDays(-2),
                             TrainingCenterId = 1,
                             CoachId = 3,
-                            TrainingCategory = TrainingCategory.Pilates
+                            TrainingCategory = TrainingCategory.Beginner
                         },
                         new Training()
                         {
-                            Name = "Cold Soles",
-                            Description = "This is the Cold Soles movie description",
+                            Name = "HIIT",
+                            Description = "This is the HIIT description",
                             Price = 39.50,
-                            ImageURL = "http://dotnethow.net/images/movies/movie-8.jpeg",
+                            ImageURL = "https://www.erjcchouston.org/clientuploads/Photos/Fitness_Center/Fitness_Group_Lunging_med_600x400.jpg",
                             StartDate = DateTime.Now.AddDays(3),
                             EndDate = DateTime.Now.AddDays(20),
                             TrainingCenterId = 1,
                             CoachId = 5,
-                            TrainingCategory = TrainingCategory.Yoga
+                            TrainingCategory = TrainingCategory.Beginner
                         }
                     });
                     context.SaveChanges();

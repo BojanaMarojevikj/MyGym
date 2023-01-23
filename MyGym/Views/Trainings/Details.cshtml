@@ -17,9 +17,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                @*<div class="col-md-4">
                     <img src="@Model.ImageURL" width="100%" alt="@Model.Name">
-                </div>
+                </div>*@
                 <div class="col-md-8">
                     <div class="card-body">
                         <p class="card-text">@Model.Description</p>
@@ -35,7 +35,7 @@
                                 @Model.Coach.Name
                             </a>
                         </p>
-                        <p class="card-text"><b>Category: </b>@Model.TrainingCategory</p>
+                        <p class="card-text"><b>Level: </b>@Model.TrainingCategory</p>
                         <p class="card-text"><b>Start Date: </b>@Model.StartDate.ToString("dd MMM yy")</p>
                         <p class="card-text"><b>End Date: </b>@Model.EndDate.ToString("dd MMM yy")</p>
                         <p class="card-text ">
@@ -54,7 +54,7 @@
                             }
                         </p>
                         <p class="card-text">
-                            <b>Actors: </b>
+                            <b>Equipment used: </b>
                             <hr />
                             <div class="row">
                                 @foreach (var eq in Model.Equipments_Trainings)

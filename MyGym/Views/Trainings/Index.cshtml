@@ -9,7 +9,7 @@
     {
         <div class="col-md-4 col-xs-6 border-primary mb-3">
             <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
+                <div class="row g-0" style="display: flex; flex-direction:column;">
                     <div class="col-md-12">
                         <div class="card-header text-white bg-info">
                             <p class="card-text">
@@ -24,14 +24,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <img src="@item.ImageURL" width="100%" alt="@item.Name">
+                    <div class="col-md-6" style="max-width:100%;">
+                        <img src="@item.ImageURL" width="100%" alt="@item.Name" style="height:300px">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="max-width:100%;">
                         <div class="card-body">
                             <p class="card-text">@item.Description</p>
                             <p class="card-text"><b>Training Center: </b>@item.TrainingCenter.Name</p>
-                            <p class="card-text"><b>Category: </b>@item.TrainingCategory</p>
+                            <p class="card-text"><b>Level: </b>@item.TrainingCategory</p>
                             <p class="card-text"><b>Start Date: </b>@item.StartDate.ToString("dd MMM yy")</p>
                             <p class="card-text"><b>End Date: </b>@item.EndDate.ToString("dd MMM yy")</p>
                             <p class="card-text ">

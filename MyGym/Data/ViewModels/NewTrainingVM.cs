@@ -35,8 +35,8 @@ namespace MyGym.Models
         [Required(ErrorMessage = "End date is required")]
         public DateTime EndDate { get; set; }
 
-        [Display(Name = "Select a category")]
-        [Required(ErrorMessage = "Category is required")]
+        [Display(Name = "Select the level")]
+        [Required(ErrorMessage = "Level is required")]
         public TrainingCategory TrainingCategory { get; set; }
 
         //Relationships
