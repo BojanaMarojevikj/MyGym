@@ -20,7 +20,7 @@
                 @*<div class="col-md-4">
                     <img src="@Model.ImageURL" width="100%" alt="@Model.Name">
                 </div>*@
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <div class="card-body">
                         <p class="card-text">@Model.Description</p>
                         <p class="card-text">
@@ -59,7 +59,7 @@
                             <div class="row">
                                 @foreach (var eq in Model.Equipments_Trainings)
                                 {
-                                    <div class="column text-center">
+                                    <div class="column text-center" style="margin: 10px;">
                                         <img class="border-info rounded-circle" src="@eq.Equipment.PictureURL" style="max-width: 150px" />
                                         <br />
                                         <a asp-controller="Equipments" asp-action="Details" asp-route-id="@eq.EquipmentId">@eq.Equipment.Name</a>
