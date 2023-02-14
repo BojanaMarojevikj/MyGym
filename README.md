@@ -1,1 +1,3 @@
-A project for the Internet Technologies course.
+MyGym is a simple web application that is used for buying a membership for fitness classes online. On the main page, you can see all of the different types of trainings that are available at the moment. You can see the details about every training, like a short description, level, date and time it starts and ends, the location, the coach and the equipment used. 
+If you want to pay for the gym membership you will have to log into your account, if you already have one, or you can create a new account by clicking the "Register" button. Once you click the "Add to cart" button, your training will be added to the cart and you will have the option to complete the order.
+If you are an admin user, you can create, edit, delete or update the trainings, coaches, equipemnt and training centers. 
