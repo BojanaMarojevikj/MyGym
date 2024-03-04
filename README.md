@@ -1,3 +1,29 @@
-MyGym is a simple web application that is used for buying a membership for fitness classes online. On the main page, you can see all of the different types of trainings that are available at the moment. You can see the details about every training, like a short description, level, date and time it starts and ends, the location, the coach and the equipment used. 
-If you want to pay for the gym membership you will have to log into your account, if you already have one, or you can create a new account by clicking the "Register" button. Once you click the "Add to cart" button, your training will be added to the cart and you will have the option to complete the order.
-If you are an admin user, you can create, edit, delete or update the trainings, coaches, equipemnt and training centers. 
+# MyGym
+
+MyGym is a web application developed as a project for the Internet Technologies course, built with ASP.NET Core. It serves as a platform for purchasing fitness class memberships online.
+
+## Features
+
+- **Browse Trainings:** On the main page, users can view all available fitness classes along with details such as description, level, date and time, location, coach, and equipment used.
+- **User Authentication:** Users can log into their accounts to purchase memberships or create new accounts by clicking the "Register" button.
+- **Shopping Cart:** Upon selecting a training, users can add it to their cart for later purchase.
+- **Order Management:** Users have the option to complete their order directly from the shopping cart.
+- **Admin Privileges:** Admin users have additional functionalities such as creating, editing, deleting, or updating trainings, coaches, equipment, and training centers.
+
+## Usage
+
+To use MyGym:
+
+1. Clone the repository: `git clone https://github.com/your_username/MyGym.git`
+2. Navigate to the project directory: `cd MyGym`
+3. Open the solution file in Visual Studio or your preferred IDE.
+4. Build and run the project.
+5. Access the application through your web browser.
+
+## Technologies Used
+
+- ASP.NET Core
+- C#
+- HTML
+- CSS
+- JavaScript
